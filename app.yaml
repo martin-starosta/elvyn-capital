@@ -1,0 +1,12 @@
+runtime: nodejs16
+
+service: default
+
+handlers:
+- url: /
+  static_files: build/index.html
+  upload: build/
+
+resources:
+  cpu: 1
+  memory_gb: 2
